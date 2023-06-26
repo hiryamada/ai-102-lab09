@@ -1,3 +1,6 @@
+#!/usr/bin/env bash
+set -euxo pipefail
+
 csname=`az cognitiveservices account list --query '[].name' -otsv`
 groupname=`az group list --query '[].name' -otsv`
 endpoint=`az cognitiveservices account show -n $csname -g $groupname --query properties.endpoint -otsv`
