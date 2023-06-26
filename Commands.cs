@@ -8,11 +8,11 @@ class Commands : ConsoleAppBase
     public Commands(ConversationAnalysisClient client) =>
         _client = client;
 
-    public void Clock(string input)
+    public void Datetime(string input)
     {
         System.Console.WriteLine(input);
-        string projectName = "clock";
-        string deploymentName = "clock";
+        string projectName = "datetime";
+        string deploymentName = "datetime";
         var data = new
         {
             analysisInput = new
